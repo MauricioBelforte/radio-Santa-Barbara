@@ -8,7 +8,7 @@
 
 body {
     background: -webkit-gradient(linear, right top, left top, from(#212130), to(#212130));
-    background: linear-gradient(to left, #212130, #212130);
+   /*  background: linear-gradient(to left, #212130, #212130); */
     text-align:center;
     color:#fff;
     margin: 0;
@@ -18,7 +18,9 @@ h3{
    /* text-shadow:1px 1px 1px #fff;*/
     margin-right: auto;
     margin-left: auto;
-    padding: 5px;
+    margin-top: 0;
+    margin-bottom: auto;
+    padding: 1%;
    /* font-family: 'Red Hat Display', sans-serif;*/
     font-family: 'Mochiy Pop P One', sans-serif; 
    /* font-family: 'Train One', cursive;*/
@@ -26,9 +28,9 @@ h3{
     
    /* -webkit-text-stroke:    #e4e4e3 ; Esto era el borde*/
   /* -webkit-text-stroke: 1px rgb(0, 0, 0);*/
-   color: #b81a1a         ;
-
-   text-shadow: -2px -2px 1px #f3f0f0   , 2px 2px 1px #cfced3   , -2px 2px 1px #aaa9b1   , 2px -2px 1px #aaa9b1   ;
+   color: #cf2121         ;
+   filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.7));
+  /*  text-shadow: -2px -2px 1px #f3f0f0   , 2px 2px 1px #cfced3   , -2px 2px 1px #aaa9b1   , 2px -2px 1px #aaa9b1   ; */
  
     
 }
@@ -39,17 +41,21 @@ h3{
 header{
     display: flex;
     /*background-color: #1a2746;*/
-    background: -webkit-gradient(linear, right top, left top, from(#4264b3), to(#1a2746));
-    background: linear-gradient(to left, #4264b3, #1a2746);
-    height: 90px;
-    padding: 5px 6%;
+  /*   background: -webkit-gradient(linear, right top, left top, from(#4264b3), to(#1a2746)); */
+   /*  background: linear-gradient(to left, #0e1420, #0e1420); */
+   background-color: #1f1d1d;
+     height: 110px; 
+    padding: 0% 6%;
     justify-content: flex-end; 
     align-items: center;
+    filter: drop-shadow(0px 15px 7px rgba(0, 0, 0, 0.7));
+    
     
 }
 header .logo{
     cursor:pointer;
   /*  margin-right: auto;*/
+  filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.7));
 }
 
 header .logo img{
@@ -57,6 +63,7 @@ header .logo img{
     width: auto;
     transition: all 0.5s;
     margin-top: 5px;
+    
     
 }
 
@@ -94,6 +101,7 @@ header .nav-links a:hover{
 
 .menu{
     display: none;
+    
 }
 
 
@@ -142,7 +150,7 @@ header .btn button {
     
     padding: 5px;
     transition: all 0.3s ease 0s;
-    
+    filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.7));
 }
 
 
@@ -156,6 +164,7 @@ header button:hover{
 
     transform: scale(1.1);
     transition: all 0.5s ease 0s;
+
    
     
 }
@@ -259,9 +268,9 @@ header .overlay .close {
 
 .contenedor-principal{
 
-    width: 90%;
+    width: 92%;
     height: auto;
-    background-color: #20202b;
+    /* background-color: #20202b; */
     color: #444;
    /* Arriba | Derecha | Abajo | Izquierda 
     margin: 50px auto auto auto;*/
@@ -286,18 +295,19 @@ header .overlay .close {
 }
 
 .galeria-cuadro {
-    background-color: #444;
+    background-color: #20202b;
    /* min-width: 150px;*/
  /*  flex: auto;   interesante para galeria de fotos random  */
   /*  flex: 200px; /*cuando la imagen duplica este ancho se divide en 2 /*
     height: auto;
    /* flex-basis: 100px;*/
-   margin: 5px;
+   margin: 2%;
    width: 34%;
    overflow: hidden;
    display: inline-block;
-  
-
+   border-radius: 15%;
+    filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.7)); 
+  transition: transform 0.6s ease-in-out;
    
 }
 
@@ -310,7 +320,8 @@ header .overlay .close {
     align-items: center;
     transition: transform 0.3s ease-in-out;
     overflow: hidden;
-
+    border-radius: 15%;
+    
     
 }
 
@@ -319,10 +330,17 @@ header .overlay .close {
  
 
 
-.galeria .galeria-cuadro .galeria-imagen:hover{
-   transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
+.galeria .galeria-cuadro:hover{
+   
+   transform: scale(1.2);
+    transition: transform 0.6s ease-in-out;
+    z-index: 3;
+    
 }
+
+
+
+
 
 /*
 .galeria .galeria-cuadro .galeria-imagen:hover{
@@ -784,15 +802,21 @@ audio:nth-child(2), audio:nth-child(4), audio:nth-child(6) {
         width: 50%;
         margin: 20px;
         transition: 0.5s;
+        filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.7));
+        
+        
+
+          
 }
 
 .playstore a img:hover {
     transform: scale(1.1);
     transition: 0.5s;
+    
 }
 
 .piedepagina {
     margin-top: 50px;
     padding: 5px;
-    background-color: #1a2746;
+    background-color: #1f1d1d;
 }
