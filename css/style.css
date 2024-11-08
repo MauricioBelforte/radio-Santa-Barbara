@@ -12,13 +12,14 @@ body {
     text-align:center;
     color:#fff;
     margin: 0;
+    height: 100%;
     
 }
 h3{
    /* text-shadow:1px 1px 1px #fff;*/
     margin-right: auto;
     margin-left: auto;
-    margin-top: 0;
+    margin-top: auto;
     margin-bottom: auto;
     padding: 1%;
    /* font-family: 'Red Hat Display', sans-serif;*/
@@ -29,7 +30,7 @@ h3{
    /* -webkit-text-stroke:    #e4e4e3 ; Esto era el borde*/
   /* -webkit-text-stroke: 1px rgb(0, 0, 0);*/
    color: #cf2121         ;
-   filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.7));
+   filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.7));
   /*  text-shadow: -2px -2px 1px #f3f0f0   , 2px 2px 1px #cfced3   , -2px 2px 1px #aaa9b1   , 2px -2px 1px #aaa9b1   ; */
  
     
@@ -44,8 +45,8 @@ header{
   /*   background: -webkit-gradient(linear, right top, left top, from(#4264b3), to(#1a2746)); */
    /*  background: linear-gradient(to left, #0e1420, #0e1420); */
    background-color: #1f1d1d;
-     height: 110px; 
-    padding: 0% 6%;
+     height: auto; 
+    padding: 1vh 6%;
     justify-content: flex-end; 
     align-items: center;
     filter: drop-shadow(0px 15px 7px rgba(0, 0, 0, 0.7));
@@ -55,12 +56,12 @@ header{
 header .logo{
     cursor:pointer;
   /*  margin-right: auto;*/
-  filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.7));
 }
 
 header .logo img{
-    height: 65px;
-    width: auto;
+    /* height: 65px; */
+    width: 12vh;
     transition: all 0.5s;
     margin-top: 5px;
     
@@ -112,18 +113,20 @@ header button{
     margin-left: 20px;
     
     */
-    width: 60px;
-    height: 60px;
+    /* width: 60px;
+    height: 60px; */
+    width: 8vh;
     border:none;
     border-radius: 50%;
     cursor: pointer;
     
     transition: all 0.5s ease 0s;
-    
+    display: flex;
+    align-items: center;
    
 
     color: rgb(44, 51, 79);
-    background-color:rgba(37, 30, 46, 0.95);
+    background-color:rgba(50, 50, 51, 0.95);
    /* background-color: #e7e7e7 ;*/
 
 }
@@ -150,7 +153,7 @@ header .btn button {
     
     padding: 5px;
     transition: all 0.3s ease 0s;
-    filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.7));
 }
 
 
@@ -177,8 +180,8 @@ header .menu button img{
 }
 
 header .btn button img {
-    height: 50px;
-    width: 50px;
+    height: auto;
+    width: 100%;
     transition: all 0.3s ease 0s;
     
     
@@ -265,12 +268,23 @@ header .overlay .close {
 /* Start  styling the page */
 
 
+.contenedor-principal { 
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+    
+} 
 
-.contenedor-principal{
+header, main {
+     flex: 1; 
+    }
+
+
+main{
 
     width: 92%;
     height: auto;
-    /* background-color: #20202b; */
+     /* background-color: #20202b;  */
     color: #444;
    /* Arriba | Derecha | Abajo | Izquierda 
     margin: 50px auto auto auto;*/
@@ -278,6 +292,7 @@ header .overlay .close {
   /* padding-top: 50px ;*/
     
    /* display:flex;*/
+   min-height: 100vh;
 }
 
 
@@ -295,19 +310,24 @@ header .overlay .close {
 }
 
 .galeria-cuadro {
-    background-color: #20202b;
+    background-color: #454649;
    /* min-width: 150px;*/
  /*  flex: auto;   interesante para galeria de fotos random  */
   /*  flex: 200px; /*cuando la imagen duplica este ancho se divide en 2 /*
     height: auto;
    /* flex-basis: 100px;*/
-   margin: 2%;
+   margin: 1.5%;
    width: 34%;
    overflow: hidden;
    display: inline-block;
-   border-radius: 15%;
-    filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.7)); 
-  transition: transform 0.6s ease-in-out;
+   border-radius: 5%;
+   border-style: solid;
+   border-width: 5px;
+   border-color: #454649;
+     filter: drop-shadow(0.5vw 0.5vw 0.2vw rgba(0, 0, 0, 0.7));  
+  transition: all 0.4s ease-in-out;
+  position: relative; 
+  z-index: 1;
    
 }
 
@@ -318,9 +338,9 @@ header .overlay .close {
   /*  object-fit: contain;*/
     justify-content: center;
     align-items: center;
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     overflow: hidden;
-    border-radius: 15%;
+    border-radius: 2%;
     
     
 }
@@ -333,9 +353,10 @@ header .overlay .close {
 .galeria .galeria-cuadro:hover{
    
    transform: scale(1.2);
-    transition: transform 0.6s ease-in-out;
+    transition: all 0.4s ease-in-out;
     z-index: 3;
-    
+    /* filter: drop-shadow(2.5vw 2.5vw 1vw rgba(0, 0, 0, 0.7)); */
+    filter: drop-shadow(1.5vw 1.5vw 0.7vw rgba(0, 0, 0, 0.7)); 
 }
 
 
@@ -812,6 +833,7 @@ audio:nth-child(2), audio:nth-child(4), audio:nth-child(6) {
 .playstore a img:hover {
     transform: scale(1.1);
     transition: 0.5s;
+    filter: drop-shadow(35px 35px 10px rgba(0, 0, 0, 0.7));
     
 }
 
