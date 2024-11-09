@@ -46,7 +46,7 @@ header{
    /*  background: linear-gradient(to left, #0e1420, #0e1420); */
    background-color: #1f1d1d;
      height: auto; 
-    padding: 1vh 6%;
+    padding: 0.5vw 4vw;
     justify-content: flex-end; 
     align-items: center;
     filter: drop-shadow(0px 15px 7px rgba(0, 0, 0, 0.7));
@@ -57,11 +57,14 @@ header .logo{
     cursor:pointer;
   /*  margin-right: auto;*/
   filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.7));
+  width: 15%;
+
 }
 
 header .logo img{
     /* height: 65px; */
-    width: 12vh;
+    max-width: 100%;
+    width: 15vh;
     transition: all 0.5s;
     margin-top: 5px;
     
@@ -71,7 +74,7 @@ header .logo img{
 header .logo img:hover{
     transform: scale(1.2);
 }
-
+/* Este es el menu clasico
 header .nav-links{
 
     list-style: none;
@@ -98,15 +101,21 @@ header .nav-links a{
 header .nav-links a:hover{
     color: rgb(193, 193, 193);
     
-}
+} */
 
 .menu{
     display: none;
     
 }
-
-
-header button{
+header h3{
+    width: 70%;
+}
+/* header a {
+    width: 15%;
+    display: flex;
+    align-items: center;
+} */
+header a{
     
     
   /*  padding: 10px 15px;
@@ -115,18 +124,18 @@ header button{
     */
     /* width: 60px;
     height: 60px; */
-    width: 8vh;
+    
+    width: 15%;
     border:none;
-    border-radius: 50%;
+    border-radius: 10vw;
     cursor: pointer;
     
     transition: all 0.5s ease 0s;
-    display: flex;
-    align-items: center;
+    
    
 
     color: rgb(44, 51, 79);
-    background-color:rgba(50, 50, 51, 0.95);
+   /*  background-color:rgba(50, 50, 51, 0.95); */
    /* background-color: #e7e7e7 ;*/
 
 }
@@ -147,11 +156,12 @@ header .menu button{
 }
 
 */
-header .btn button {
+
+header .btn  {
    /* font-size: 5mm;
     padding: 10px 25px;*/
     
-    padding: 5px;
+    
     transition: all 0.3s ease 0s;
     filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.7));
 }
@@ -159,11 +169,11 @@ header .btn button {
 
 
 
-header button:hover{ 
+header .btn:hover{ 
 
     
     color: rgb(19, 20, 20);
-    background-color: #e4e4e4;
+    
 
     transform: scale(1.1);
     transition: all 0.5s ease 0s;
@@ -172,18 +182,19 @@ header button:hover{
     
 }
 
-header .menu button img{ 
+/* header .menu button img{ 
     height: 35px;
-    width: auto;
+    width: 60px;
    
     
-}
+} */
 
-header .btn button img {
+header .btn  img {
     height: auto;
-    width: 100%;
+    max-width: 60%; /* El maximo es el 70% de su padre, que es .btn o el enlace a*/
+    width: 10vh; /* Va a tener un 10 vh es decir 10% del ancho de la pantalla pero si pasa el max-width es decir si es mas grande que el 70% se clava en el 70%*/
     transition: all 0.3s ease 0s;
-    
+    object-fit: cover;
     
 }
 
@@ -322,7 +333,7 @@ main{
    display: inline-block;
    border-radius: 15%;
    border-style: solid;
-   border-width: 8px;
+   border-width: 0.5vw;
    border-color: #e4e4e4;
      filter: drop-shadow(0.5vw 0.5vw 0.2vw rgba(0, 0, 0, 0.7));  
   transition: all 0.4s ease-in-out;
