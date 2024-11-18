@@ -1023,7 +1023,7 @@ audio:nth-child(6) {
         left: -100vw;
         width: 100vw;
         height: 100vh;
-        padding: 1vw 0% 1% 0%;
+        padding: 1vw 0% 0vh 0%;
 
 
 
@@ -1036,8 +1036,8 @@ audio:nth-child(6) {
     .aside img {
 
         width: 100vw;
-        height: 100vw;
-        padding: 1vw 1vw 0vw 0vw;
+        height: 100vh;
+        padding: 10vh 1vw 15vh 0vw;
 
         /* Ajusta según la altura del header */
 
