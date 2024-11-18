@@ -1,4 +1,4 @@
-/* 
+
 var
 
     btn = document.getElementById('player'),
@@ -36,7 +36,7 @@ function closeNav() {
 
 btn.addEventListener('mouseover', encender, true)
 
- */
+
 
 
 const imagenesPromo1 = ["imagenes/promo1.jpg", "imagenes/promo1alt.jpg"];
