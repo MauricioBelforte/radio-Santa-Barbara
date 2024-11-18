@@ -280,6 +280,8 @@ header .overlay .close {
         top: 15px;
         right: 35px;
     }
+
+
 }
 
 /* Fin barra de navegacion Nav*/
@@ -962,12 +964,12 @@ audio:nth-child(6) {
     left: -100vw;
     width: 100vw;
     height: 100vh;
-    padding: 0% 1% 0% 1%;
+    padding: 1% 10vh 1% 10vh;
 
 
     /* Ocupa toda la vista vertical */
-    background-color: rgba(0, 0, 0, 0.85);
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(9, 9, 9, 0.949);
+
     transition: left 0.3s ease-in-out;
     margin-top: 0vh;
     /* Ajusta según la altura del header */
@@ -976,10 +978,10 @@ audio:nth-child(6) {
 
 .aside img {
 
-    width: 80%;
+    width: 100vh;
     height: 100%;
-    padding: 1% 2% 0% 1%;
-
+    /* padding: 1% 1vh 1% 1vh; */
+    box-shadow: 15px 8px 20px rgba(0, 0, 0, 0.922);
     /* Ajusta según la altura del header */
 
     /* Para mantener la proporción de la imagen */
@@ -1008,4 +1010,37 @@ audio:nth-child(6) {
 .close-icon {
     display: inline-block;
     font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 700px) {
+
+
+    .aside {
+
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        height: 100vh;
+        padding: 1vw 0% 1% 0%;
+
+
+
+
+
+        margin-top: 0vh;
+
+    }
+
+    .aside img {
+
+        width: 100%;
+        height: 100%;
+        padding: 10vh 1vw 10vh 1vw;
+
+        /* Ajusta según la altura del header */
+
+        /* Para mantener la proporción de la imagen */
+    }
 }
