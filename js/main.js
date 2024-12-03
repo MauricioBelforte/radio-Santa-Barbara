@@ -39,9 +39,9 @@ btn.addEventListener('mouseover', encender, true)
 
 
 
-const imagenesPromo1 = ["imagenes/promo1.jpg", "imagenes/promo1alt.jpg"];
-const imagenesPromo2 = ["imagenes/promo2.jpg", "imagenes/promo2alt.jpg"];
-const imagenesPromo3 = ["imagenes/promo3.jpg", "imagenes/promo3alt.jpg"];
+const imagenesPromo1 = ["imagenes/promo1.jpg", "imagenes/promo1alt.jpg","imagenes/promo1extra.jpg"];
+const imagenesPromo2 = ["imagenes/promo2.jpg", "imagenes/promo2alt.jpg","imagenes/promo2extra.jpg"];
+const imagenesPromo3 = ["imagenes/promo3.jpg", "imagenes/promo3alt.jpg","imagenes/promo3extra.jpg"];
 
 let indiceActual1 = 0;
 let indiceActual2 = 0;
