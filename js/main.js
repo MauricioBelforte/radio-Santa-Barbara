@@ -36,31 +36,41 @@ function closeNav() {
 
 btn.addEventListener('mouseover', encender, true)
 
-
-
-
+/* 
+// Ejemplo para colocar 6 imagenes distintas
 const imagenesPromo1 = ["imagenes/promo1.jpg", "imagenes/promo1alt.jpg","imagenes/promo1extra.jpg"];
 const imagenesPromo2 = ["imagenes/promo2.jpg", "imagenes/promo2alt.jpg","imagenes/promo2extra.jpg"];
 const imagenesPromo3 = ["imagenes/promo3.jpg", "imagenes/promo3alt.jpg","imagenes/promo3extra.jpg"];
+
+ */
+
+
+const imagenesPromo1 = ["imagenes/promo1.jpg", "imagenes/promo2.jpg"];
+const imagenesPromo2 = ["imagenes/promo2.jpg", "imagenes/promo1.jpg"];
+const imagenesPromo3 = ["imagenes/promo1.jpg", "imagenes/promo2.jpg"];
 
 let indiceActual1 = 0;
 let indiceActual2 = 0;
 let indiceActual3 = 0;
 
-const elementoPromo1 = document.getElementById("promo1");
-const elementoPromo2 = document.getElementById("promo2");
-const elementoPromo3 = document.getElementById("promo3");
+
+
+
+
+const imgRecuadroPromo1 = document.getElementById("promo1");
+const imgRecuadroPromo2 = document.getElementById("promo2");
+const imgRecuadroPromo3 = document.getElementById("promo3");
 
 function cambiarImagen() {
     indiceActual1 = (indiceActual1 + 1) % imagenesPromo1.length;
-    elementoPromo1.src = imagenesPromo1[indiceActual1];
+    imgRecuadroPromo1.src = imagenesPromo1[indiceActual1];
 
 
     indiceActual2 = (indiceActual2 + 1) % imagenesPromo2.length;
-    elementoPromo2.src = imagenesPromo2[indiceActual2];
+    imgRecuadroPromo2.src = imagenesPromo2[indiceActual2];
 
     indiceActual3 = (indiceActual3 + 1) % imagenesPromo3.length;
-    elementoPromo3.src = imagenesPromo3[indiceActual3];
+    imgRecuadroPromo3.src = imagenesPromo3[indiceActual3];
 }
 
 setInterval(cambiarImagen, 20000); // Cambiar imagen cada 20 segundos
