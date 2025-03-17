@@ -46,8 +46,8 @@ const imagenesPromo3 = ["imagenes/promo3.jpg", "imagenes/promo3alt.jpg","imagene
 
 
 const imagenesPromo1 = ["imagenes/promo1.jpg", "imagenes/promo2.jpg"];
-const imagenesPromo2 = ["imagenes/promo2.jpg", "imagenes/promo1.jpg"];
-const imagenesPromo3 = ["imagenes/promo1.jpg", "imagenes/promo2.jpg"];
+const imagenesPromo2 = ["imagenes/promo2.jpg", "imagenes/promo3.jpg"];
+const imagenesPromo3 = ["imagenes/promo3.jpg", "imagenes/promo1.jpg"];
 
 let indiceActual1 = 0;
 let indiceActual2 = 0;
